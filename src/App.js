@@ -5,10 +5,11 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Menu from './Components/Menu/Menu';
 import Order from './Components/Order/Order';
 import ReserveTable from './Components/ReserveTable/ReserveTable';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <>
+    <div className='d-flex flex-column justify-content-end' style={{ minHeight: "100vh", position: "relative" }}>
       <Navigation />
       <Routes>
         <Route element={<Dashboard />} path="/" exact></Route>
@@ -16,7 +17,11 @@ function App() {
         <Route element={<Order />} path="/order"></Route>
         <Route element={<ReserveTable />} path="/reserve-table"></Route>
       </Routes>
-    </>
+
+      <div className="mt-auto">
+        <Footer />
+      </div>
+    </div>
   );
 }
 

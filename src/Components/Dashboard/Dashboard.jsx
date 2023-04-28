@@ -1,9 +1,12 @@
 import React from 'react'
+import DashCarousel from '../DashCarousel.jsx/DashCarousel'
+import Dash from '../Dash/Dash';
 
 const Dashboard = () => {
   return (
     <div>
-      <h1>Dashboard Page</h1>
+      <DashCarousel />
+      <Dash />
     </div>
   )
 }

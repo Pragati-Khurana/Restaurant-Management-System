@@ -1,0 +1,14 @@
+.footer-heading {
+    font-family: 'Varela Round', sans-serif;
+    font-size: large;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-content {
+    font-size: small;
+}
+
+.footer-icon {
+    cursor: pointer;
+}
