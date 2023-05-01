@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Person2Icon from '@mui/icons-material/Person2';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
 
 
 const Navigation = () => {
@@ -17,10 +18,10 @@ const Navigation = () => {
         <Navbar.Collapse id="basic-navbar-nav">
 
           <Nav className="me-auto mx-3">
-            <Nav.Link href="/" className='mx-3'>Home</Nav.Link>
-            <Nav.Link href="/menu" className='mx-3'>Menu</Nav.Link>
-            <Nav.Link href="/order" className='mx-3'>Order</Nav.Link>
-            <Nav.Link href="/reserve-table" className='mx-3'>Reserve Table</Nav.Link>
+            <Link to="/" className='mx-3 nav-link'>Home</Link>
+            <Link to="/menu" className='mx-3 nav-link'>Menu</Link>
+            <Link to="/order" className='mx-3 nav-link'>Order</Link>
+            <Link to="/reserve-table" className='mx-3 nav-link'>Reserve Table</Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

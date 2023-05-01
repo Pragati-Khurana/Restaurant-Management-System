@@ -3,5 +3,41 @@
 }
 
 .carousel-container {
-    margin: 10px 20px;
+    margin: 70px 60px;
+}
+
+.dash-carousel-title {
+    display: flex;
+    justify-content: center;
+}
+
+.dash-carousel-title h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.4;
+    word-spacing: 0.35px;
+}
+
+.dash-carousel-sub-title {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.dash-carousel-sub-title p {
+    width: 70%;
+}
+
+@media screen and (max-width: 1250px) {
+    .dash-carousel-title {
+        font-size: 28px;
+    }
+
+    .dash-carousel-sub-title {
+        font-size: 16px;
+    }
+
+    .dash-carousel-sub-title p {
+        width: 100%;
+    }
 }

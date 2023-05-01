@@ -5,8 +5,8 @@ import Dash from '../Dash/Dash';
 const Dashboard = () => {
   return (
     <div>
-      <DashCarousel />
       <Dash />
+      <DashCarousel />
     </div>
   )
 }

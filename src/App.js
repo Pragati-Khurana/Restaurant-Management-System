@@ -9,19 +9,21 @@ import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <div className='d-flex flex-column justify-content-end' style={{ minHeight: "100vh", position: "relative" }}>
+    <>
       <Navigation />
-      <Routes>
-        <Route element={<Dashboard />} path="/" exact></Route>
-        <Route element={<Menu />} path="/menu"></Route>
-        <Route element={<Order />} path="/order"></Route>
-        <Route element={<ReserveTable />} path="/reserve-table"></Route>
-      </Routes>
+      <div className='d-flex flex-column justify-content-end' style={{ minHeight: "100vh", position: "relative" }}>
+        <Routes>
+          <Route element={<Dashboard />} path="/" exact></Route>
+          <Route element={<Menu />} path="/menu"></Route>
+          <Route element={<Order />} path="/order"></Route>
+          <Route element={<ReserveTable />} path="/reserve-table"></Route>
+        </Routes>
 
-      <div className="mt-auto">
-        <Footer />
+        <div className="mt-auto">
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
