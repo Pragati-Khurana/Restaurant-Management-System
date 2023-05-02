@@ -6,35 +6,43 @@
     margin: 70px 60px;
 }
 
-.dash-carousel-title {
+/* .dash-carousel-title {
     display: flex;
     justify-content: center;
-}
+} */
 
 .dash-carousel-title h1 {
     font-size: 60px;
     font-weight: 600;
     line-height: 1.4;
     word-spacing: 0.35px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
-.dash-carousel-sub-title {
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-}
+/* .dash-carousel-sub-title {
+    
+} */
 
 .dash-carousel-sub-title p {
+    font-size: 22px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
 }
 
 @media screen and (max-width: 1250px) {
-    .dash-carousel-title {
+    .dash-carousel-title h1 {
         font-size: 28px;
+        width: 100%;
     }
 
     .dash-carousel-sub-title {
         font-size: 16px;
+        width: 100%;
     }
 
     .dash-carousel-sub-title p {
