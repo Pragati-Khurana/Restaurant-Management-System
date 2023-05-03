@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <Navbar className="p-4 fs-4" bg="light" expand="lg">
+    <Navbar className="p-4 fs-4" bg="transparent" expand="lg">
       <Container>
         <Navbar.Brand href="#home">Logo</Navbar.Brand>
 
