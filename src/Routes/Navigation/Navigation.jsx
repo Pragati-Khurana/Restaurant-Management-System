@@ -158,9 +158,7 @@ function Navigation(props) {
     >
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <ShoppingCartIcon />
-          </Badge>
+          <ShoppingCartIcon />
         </IconButton>
         <p>Cart</p>
       </MenuItem>
@@ -181,10 +179,11 @@ function Navigation(props) {
 
   
 const classes = useStyles();
+
   return (
-    <Box className="" sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar color="transparent" >
+      <AppBar color="inherit" position="sticky">
         <Toolbar>
           <IconButton
             color="inherit"
@@ -193,7 +192,7 @@ const classes = useStyles();
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           >
-            <MenuIcon />
+            <MenuIcon sx={{color: "inherit"}} />
           </IconButton>
           <Typography
             variant="h6"
@@ -204,7 +203,7 @@ const classes = useStyles();
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item.title} sx={{ color: "white" }}>
+              <Button key={item.title} sx={{ color: "inherit" }}>
                 <Link to={item.url} className='mx-3 nav-link'>{item.title}</Link>
               </Button>
             ))}
@@ -212,8 +211,8 @@ const classes = useStyles();
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="white">
-              <ShoppingCartIcon />
+            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+              <ShoppingCartIcon sx={{color: "inherit"}} />
             </IconButton>
             
             <IconButton
@@ -225,7 +224,7 @@ const classes = useStyles();
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <AccountCircle sx={{color: "inherit"}} />
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -237,7 +236,7 @@ const classes = useStyles();
               onClick={handleMobileMenuOpen}
               color="inherit"
             >
-              <MoreIcon />
+              <MoreIcon sx={{color: "white"}} />
             </IconButton>
           </Box>
 
