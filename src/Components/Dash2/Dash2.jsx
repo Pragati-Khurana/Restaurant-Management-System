@@ -1,8 +1,10 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import './Dash2.css'
+import { useNavigate } from 'react-router-dom'
 
 const Dash2 = () => {
+  const Navigate = useNavigate();
   return (
     <div className='dash2-container d-flex flex-column'>
         <div className="dash2-title py-1">
@@ -14,7 +16,7 @@ const Dash2 = () => {
           <div className='d-flex flex-column'>
             <p className='py-1 dash2-content'>The restaurant will open at 3pm for happy hour and dinner service starting at 5pm. We will continue to offer brunch on weekends from 10am-3pm with bottomless mimosas. We will also continue with our late night lounge on Friday and Saturdays until 2am.</p>
             <div>
-              <Button className='py-1' variant="outline-secondary">VIEW MENU</Button>
+              <Button onClick={() => Navigate('/menu')} className='py-1' variant="outline-secondary">VIEW MENU</Button>
             </div>
           </div>
 

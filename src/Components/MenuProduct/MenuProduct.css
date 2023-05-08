@@ -1,0 +1,16 @@
+.mp-image {
+    width: 250px;
+}
+
+.mp-name-price {
+    width: 250px;
+    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+.mp-description {
+    width: 250px;
+}

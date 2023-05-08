@@ -1,0 +1,23 @@
+.heading {
+    /* background-image: url(bgImg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading>h1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.7;
+    word-spacing: 35px;
+}
+
+.heading>p {
+    width: 30%;
+    text-align: center;
+}

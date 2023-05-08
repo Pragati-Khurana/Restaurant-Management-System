@@ -1,0 +1,10 @@
+.menu-products-container {
+    margin: 70px 250px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1799px) {
+    .menu-products-container {
+        margin: 70px 60px;
+    }
+}

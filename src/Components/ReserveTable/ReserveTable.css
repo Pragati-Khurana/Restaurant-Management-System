@@ -2,29 +2,6 @@
     background-color: #d8d8d8;
 }
 
-.heading {
-    background-image: url('https://infatuation.imgix.net/media/images/guides/dark-chicago-restaurant-power-rankings/Izakaya_sandynoto.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.heading>h1 {
-    font-size: 45px;
-    font-weight: 500;
-    line-height: 1.7;
-    word-spacing: 35px;
-}
-
-.heading>p {
-    width: 30%;
-    text-align: center;
-}
-
 .reserve-form-container {
     width: fit-content;
     /* justify-content: center; */

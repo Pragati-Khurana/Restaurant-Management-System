@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import SignIn from "../SignIn/SignIn";
 
 const Order = () => {
   return (
     <div>
-      <h1>Order Page</h1>
+      <SignIn />
     </div>
-  )
-}
+  );
+};
 
-export default Order
+export default Order;

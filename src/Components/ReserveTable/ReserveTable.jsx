@@ -1,15 +1,18 @@
 import React from 'react'
 import { Button, Col, Container, Form, Row } from 'react-bootstrap'
+import PageHeader from '../../BasicComponents/PageHeader/PageHeader'
 import './ReserveTable.css'
 
 
 const ReserveTable = () => {
   return (
     <div className='reserve-table-container d-flex flex-column'>
-      <div className='heading d-flex flex-column'>
+      {/* <div className='heading d-flex flex-column'>
         <h1>Reservation</h1>
         <p>If you have a food allergy, intolerance or sensitivity, please speak to your server about ingredients in our dishes before you order your meal.</p>
-      </div>
+      </div> */}
+
+      <PageHeader bgImg='https://infatuation.imgix.net/media/images/guides/dark-chicago-restaurant-power-rankings/Izakaya_sandynoto.jpg' title='Reservation' description='If you have a food allergy, intolerance or sensitivity, please speak to your server about ingredients in our dishes before you order your meal.'  />
 
       <div className="reserve-form-container d-flex flex-column">
           <div className="rt-sub-title">BOOK A TABLE</div>
