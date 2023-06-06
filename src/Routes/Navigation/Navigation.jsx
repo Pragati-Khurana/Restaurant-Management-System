@@ -20,6 +20,9 @@ import { AccountCircle } from "@mui/icons-material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@mui/styles";
+import { useAuth0 } from "@auth0/auth0-react";
+import SignIn from "../../Components/SignIn/SignIn";
+import SignOut from "../../Components/SignOut/SignOut";
 
 const drawerWidth = 240;
 // const navItems = ["Home", "Menu", "Order", "Reserve Table"];
@@ -65,6 +68,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Navigation(props) {
+  const { isAuthenticated } = useAuth0();
+
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -133,7 +138,12 @@ function Navigation(props) {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>SignIn</MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        {
+          isAuthenticated ? <SignOut /> : <SignIn />
+          // <LoginButton />
+        }
+      </MenuItem>
       {/* <MenuItem onClick={handleMenuClose}>My account</MenuItem> */}
     </Menu>
   );
@@ -197,7 +207,9 @@ function Navigation(props) {
             component="div"
             sx={{ display: { xs: "none", sm: "block", color: "inherit" } }}
           >
-            MUI
+            <Link to="/" className="mx-3 nav-link">
+              MUI
+            </Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
